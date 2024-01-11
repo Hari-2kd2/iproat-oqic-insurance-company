@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+.sidebar-custom {
+  font-family: 'Raleway', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.sidebar-custom * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.sidebar-custom li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0.5em 1.5em;
+  padding: 0;
+}
+.sidebar-custom a {
+  padding: 0.3em 0;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+.sidebar-custom a:before,
+.sidebar-custom a:after {
+  height: 3px;
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  background-color: #9b59b6;
+  width: 0;
+}
+.sidebar-custom a:before {
+  top: 0;
+  left: 0;
+}
+.sidebar-custom a:after {
+  bottom: 0;
+  right: 0;
+}
+.sidebar-custom a:hover,
+.sidebar-custom .current a {
+  color: #ffffff;
+}
+.sidebar-custom a:hover:before,
+.sidebar-custom .current a:before,
+.sidebar-custom a:hover:after,
+.sidebar-custom .current a:after {
+  width: 100%;
+}
+/* Demo purposes only */
+body {
+  background-color: #212121;
+}

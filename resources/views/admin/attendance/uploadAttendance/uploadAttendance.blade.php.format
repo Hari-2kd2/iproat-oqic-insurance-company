@@ -1,0 +1,146 @@
+@extends('admin.master')
+@section('content')
+@section('title')
+    @lang('attendance.upload_attendance')
+@endsection
+<style>
+    body {
+
+        font-family: 'Nunito', sans-serif;
+
+    }
+
+    #hideMe {
+        -webkit-animation: seconds 1.0s forwards;
+        -webkit-animation-iteration-count: 1;
+        -webkit-animation-delay: 3s;
+        animation: seconds 1.0s forwards;
+        animation-iteration-count: 1;
+        animation-delay: 3s;
+        position: relative;
+    }
+
+    @-webkit-keyframes seconds {
+        0% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+            left: -9999px;
+            position: absolute;
+        }
+    }
+
+    @keyframes seconds {
+        0% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+            left: -9999px;
+            position: absolute;
+        }
+    }
+
+    td {
+        background-color: rgb(65, 179, 249);
+        color: white;
+    }
+
+</style>
+<script>
+    jQuery(function() {
+        $("#uploadEmployeeAttendance").validate();
+    });
+</script>
+<div class="container-fluid">
+    <div class="row bg-title">
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+            <ol class="breadcrumb">
+                <li class="active breadcrumbColor"><a href="{{ url('dashboard') }}"><i class="fa fa-home"></i>
+                        @lang('dashboard.dashboard')</a></li>
+                <li>@yield('title')</li>
+            </ol>
+        </div>
+    </div>
+    <div class="row container-fluid">
+        <div class="col-sm-12">
+            <div class="panel panel-info">
+                <div class="panel-heading"><i class="mdi mdi-table fa-fw"></i> @yield('title')</div>
+                <div class="panel-wrapper collapse in" aria-expanded="true">
+                    <div class="panel-body">
+                        <div class="bg-title border" style="margin: 12px;padding:12px">
+                            <div class="border col-sm-12 col-md-12">
+                                <div class="border" style="margin-left: 14px;margin-right: 14px">
+                                    <form action="{{ Url('uploadAttendance/import') }}" class=""
+                                        metdod="post" enctype="multipart/form-data">
+                                        {{ csrf_field() }}
+                                        <p class="container border"><span><i class="fa fa-upload"></i></span><span
+                                                style="margin-left: 8px"> Upload Excel
+                                                File Here</span></p>
+                                        <div class="row">
+                                            <div class="col-sm-5 col-md-8"
+                                                style="margin-left: 46px;  margin-bottom: 2px;">
+                                                <input type="file" name="select_file" class="form-control">
+                                            </div>
+                                        </div>
+                                            <div class="col-sm-1">
+                                                <input class="btn btn-success" style="margin-top: 2px;" type="submit"
+                                                    value="Upload">
+                                            </div>
+                                            <div class="col-sm-1">
+                                                <a href="{{ route('uploadAttendance.downloadFile') }}">
+                                                    <input type="button" id="attendance_template"
+                                                        class="btn btn-info attendance_template" value="Sample Format"
+                                                        type="submit" style="margin-left: 12px;margin-top: 2px;" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    @if (count($errors) > 0)
+                                        <div class="alert alert-danger alert-block"
+                                            style="margin-right: 46px;  margin-top: 12px">Upload Validation
+                                            Error<br><br></div>
+                                        <ul>
+                                            @foreach ($errors->all() as $error)
+                                                <li>{{ $error }}</li>
+                                            @endforeach
+                                        </ul>
+                                    @endif
+                                    @if ($message = Session::get('success'))
+                                        <div class="alert alert-success alert-block"
+                                            style="margin-right: 46px;  margin-top: 12px">
+                                            <button type="button" class="close" data-dismiss="alert">x</button>
+                                            <strong>{{ $message }}</strong>
+                                        </div>
+                                    @endif
+                                    @if ($message = Session::get('danger'))
+                                        <div class="alert alert-danger alert-block"
+                                            style="margin-right: 46px;  margin-top: 12px">
+                                            <button type="button" class="close" data-dismiss="alert">x</button>
+                                            <strong>{{ $message }}</strong>
+                                        </div>
+                                    @endif
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="data">
+                @include('admin.attendance.uploadAttendance.pagination')
+            </div>
+            {{-- <div class="row text-right" style="margin-bottom: 15px; margin-right: 16;">
+                <a href="{{ route('uploadAttendance/export', ['type' => 'xlsx']) }}" class="btn btn-success"
+                    style="margin-right: 15px;">Download - XLSX</a>
+                <a href="{{ route('uploadAttendance/export', ['type' => 'csv']) }}" class="btn btn-success"
+                    style="margin-right: 15px; ">Download - CSV</a>
+            </div> --}}
+
+        </div>
+    </div>
+</div>
+
+@endsection

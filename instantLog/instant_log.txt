@@ -1,0 +1,288 @@
+stdClass Object
+(
+    [ipAddress] => 192.168.0.230
+    [portNo] => 8074
+    [protocol] => HTTP
+    [channelID] => 1
+    [dateTime] => 2023-05-31T20:37:07+05:30
+    [activePostCount] => 1
+    [eventType] => AccessControllerEvent
+    [eventState] => active
+    [eventDescription] => Access Controller Event
+    [AccessControllerEvent] => stdClass Object
+        (
+            [deviceName] => Test
+            [majorEventType] => 5
+            [subEventType] => 75
+            [name] => Hari
+            [cardReaderKind] => 1
+            [cardReaderNo] => 1
+            [verifyNo] => 143
+            [employeeNoString] => 1004
+            [serialNo] => 7936
+            [userType] => normal
+            [currentVerifyMode] => face
+            [currentEvent] => 
+            [frontSerialNo] => 7935
+            [attendanceStatus] => undefined
+            [label] => 
+            [statusValue] => 0
+            [mask] => no
+            [picturesNumber] => 1
+            [purePwdVerifyEnable] => 1
+        )
+
+)
+DateTime Now. 31-05-2023 05:12:13 PM.
+stdClass Object
+(
+    [ipAddress] => 192.168.0.230
+    [portNo] => 8074
+    [protocol] => HTTP
+    [channelID] => 1
+    [dateTime] => 2023-05-31T20:37:56+05:30
+    [activePostCount] => 1
+    [eventType] => AccessControllerEvent
+    [eventState] => active
+    [eventDescription] => Access Controller Event
+    [AccessControllerEvent] => stdClass Object
+        (
+            [deviceName] => Test
+            [majorEventType] => 5
+            [subEventType] => 75
+            [name] => ARUN
+            [cardReaderKind] => 1
+            [cardReaderNo] => 1
+            [verifyNo] => 151
+            [employeeNoString] => 1006
+            [serialNo] => 7940
+            [userType] => normal
+            [currentVerifyMode] => face
+            [currentEvent] => 
+            [frontSerialNo] => 7939
+            [attendanceStatus] => undefined
+            [label] => 
+            [statusValue] => 0
+            [mask] => yes
+            [picturesNumber] => 1
+            [purePwdVerifyEnable] => 1
+        )
+
+)
+DateTime Now. 31-05-2023 05:12:14 PM.
+stdClass Object
+(
+    [ipAddress] => 192.168.0.230
+    [portNo] => 8074
+    [protocol] => HTTP
+    [channelID] => 1
+    [dateTime] => 2023-05-31T20:38:03+05:30
+    [activePostCount] => 1
+    [eventType] => AccessControllerEvent
+    [eventState] => active
+    [eventDescription] => Access Controller Event
+    [AccessControllerEvent] => stdClass Object
+        (
+            [deviceName] => Test
+            [majorEventType] => 5
+            [subEventType] => 75
+            [name] => ARUN
+            [cardReaderKind] => 1
+            [cardReaderNo] => 1
+            [verifyNo] => 157
+            [employeeNoString] => 1006
+            [serialNo] => 7943
+            [userType] => normal
+            [currentVerifyMode] => face
+            [currentEvent] => 
+            [frontSerialNo] => 7942
+            [attendanceStatus] => undefined
+            [label] => 
+            [statusValue] => 0
+            [mask] => no
+            [picturesNumber] => 1
+            [purePwdVerifyEnable] => 1
+        )
+
+)
+DateTime Now. 31-05-2023 05:12:16 PM.
+stdClass Object
+(
+    [ipAddress] => 192.168.0.230
+    [portNo] => 8074
+    [protocol] => HTTP
+    [channelID] => 1
+    [dateTime] => 2023-05-31T20:41:50+05:30
+    [activePostCount] => 1
+    [eventType] => AccessControllerEvent
+    [eventState] => active
+    [eventDescription] => Access Controller Event
+    [AccessControllerEvent] => stdClass Object
+        (
+            [deviceName] => Test
+            [majorEventType] => 5
+            [subEventType] => 75
+            [name] => ARUN
+            [cardReaderKind] => 1
+            [cardReaderNo] => 1
+            [verifyNo] => 136
+            [employeeNoString] => 1006
+            [serialNo] => 7951
+            [userType] => normal
+            [currentVerifyMode] => face
+            [currentEvent] => 
+            [frontSerialNo] => 7950
+            [attendanceStatus] => undefined
+            [label] => 
+            [statusValue] => 0
+            [mask] => no
+            [picturesNumber] => 1
+            [purePwdVerifyEnable] => 1
+        )
+
+)
+DateTime Now. 31-05-2023 05:12:18 PM.
+stdClass Object
+(
+    [ipAddress] => 192.168.0.230
+    [portNo] => 8074
+    [protocol] => HTTP
+    [channelID] => 1
+    [dateTime] => 2023-05-31T20:42:32+05:30
+    [activePostCount] => 1
+    [eventType] => AccessControllerEvent
+    [eventState] => active
+    [eventDescription] => Access Controller Event
+    [AccessControllerEvent] => stdClass Object
+        (
+            [deviceName] => Test
+            [majorEventType] => 5
+            [subEventType] => 75
+            [name] => ARUN
+            [cardReaderKind] => 1
+            [cardReaderNo] => 1
+            [verifyNo] => 142
+            [employeeNoString] => 1006
+            [serialNo] => 7954
+            [userType] => normal
+            [currentVerifyMode] => face
+            [currentEvent] => 
+            [frontSerialNo] => 7953
+            [attendanceStatus] => undefined
+            [label] => 
+            [statusValue] => 0
+            [mask] => no
+            [picturesNumber] => 1
+            [purePwdVerifyEnable] => 1
+        )
+
+)
+DateTime Now. 31-05-2023 05:12:37 PM.
+stdClass Object
+(
+    [ipAddress] => 192.168.0.230
+    [portNo] => 8074
+    [protocol] => HTTP
+    [channelID] => 1
+    [dateTime] => 2023-05-31T21:08:04+05:30
+    [activePostCount] => 1
+    [eventType] => AccessControllerEvent
+    [eventState] => active
+    [eventDescription] => Access Controller Event
+    [AccessControllerEvent] => stdClass Object
+        (
+            [deviceName] => Booking
+            [majorEventType] => 5
+            [subEventType] => 75
+            [name] => ARUN
+            [cardReaderKind] => 1
+            [cardReaderNo] => 1
+            [verifyNo] => 150
+            [employeeNoString] => 1006
+            [serialNo] => 7958
+            [userType] => normal
+            [currentVerifyMode] => face
+            [currentEvent] => 
+            [frontSerialNo] => 0
+            [attendanceStatus] => undefined
+            [label] => 
+            [statusValue] => 0
+            [mask] => no
+            [picturesNumber] => 1
+            [purePwdVerifyEnable] => 1
+        )
+
+)
+DateTime Now. 31-05-2023 05:43:21 PM.
+stdClass Object
+(
+    [ipAddress] => 192.168.0.230
+    [portNo] => 8074
+    [protocol] => HTTP
+    [channelID] => 1
+    [dateTime] => 2023-05-31T21:12:45+05:30
+    [activePostCount] => 1
+    [eventType] => AccessControllerEvent
+    [eventState] => active
+    [eventDescription] => Access Controller Event
+    [AccessControllerEvent] => stdClass Object
+        (
+            [deviceName] => Booking
+            [majorEventType] => 5
+            [subEventType] => 75
+            [name] => ARUN
+            [cardReaderKind] => 1
+            [cardReaderNo] => 1
+            [verifyNo] => 134
+            [employeeNoString] => 1006
+            [serialNo] => 7966
+            [userType] => normal
+            [currentVerifyMode] => face
+            [currentEvent] => 
+            [frontSerialNo] => 7965
+            [attendanceStatus] => undefined
+            [label] => 
+            [statusValue] => 0
+            [mask] => no
+            [picturesNumber] => 1
+            [purePwdVerifyEnable] => 1
+        )
+
+)
+DateTime Now. 31-05-2023 05:43:23 PM.
+stdClass Object
+(
+    [ipAddress] => 192.168.0.230
+    [portNo] => 8074
+    [protocol] => HTTP
+    [channelID] => 1
+    [dateTime] => 2023-05-31T21:17:25+05:30
+    [activePostCount] => 1
+    [eventType] => AccessControllerEvent
+    [eventState] => active
+    [eventDescription] => Access Controller Event
+    [AccessControllerEvent] => stdClass Object
+        (
+            [deviceName] => Booking
+            [majorEventType] => 5
+            [subEventType] => 75
+            [name] => Mohan
+            [cardReaderKind] => 1
+            [cardReaderNo] => 1
+            [verifyNo] => 146
+            [employeeNoString] => 1003
+            [serialNo] => 7972
+            [userType] => normal
+            [currentVerifyMode] => face
+            [currentEvent] => 
+            [frontSerialNo] => 7971
+            [attendanceStatus] => undefined
+            [label] => 
+            [statusValue] => 0
+            [mask] => no
+            [picturesNumber] => 1
+            [purePwdVerifyEnable] => 1
+        )
+
+)
+DateTime Now. 31-05-2023 05:47:30 PM.

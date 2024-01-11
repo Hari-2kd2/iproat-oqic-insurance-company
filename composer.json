@@ -1,0 +1,79 @@
+{
+    "name": "laravel/laravel",
+    "description": "The Laravel Framework.",
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": "^7.3|^8.0",
+        "bacon/bacon-qr-code": "^2.0",
+        "barryvdh/laravel-dompdf": "v2.0.1",
+        "composer/composer": "2.5.8",
+        "elgibor-solution/laravel-database-encryption": "^1.1",
+        "fruitcake/laravel-cors": "^3.0",
+        "guzzlehttp/guzzle": "^7.0.1",
+        "kris/laravel-form-builder": "1.52.0",
+        "laravel/framework": "^8.75",
+        "laravel/sanctum": "^2.11",
+        "laravel/tinker": "^2.5",
+        "lcobucci/jwt": "3.3.3",
+        "maatwebsite/excel": "3.1.48",
+        "phpoffice/phpspreadsheet": "1.29.0",
+        "pragmarx/google2fa-laravel": "^2.1",
+        "psr/simple-cache": "1.0",
+        "razorpay/razorpay": "^2.8",
+        "stripe/stripe-php": "^8.5",
+        "symfony/psr-http-message-bridge": "*",
+        "tymon/jwt-auth": "1.0.2"
+    },
+    "require-dev": {
+        "facade/ignition": "^2.5",
+        "fakerphp/faker": "^1.9.1",
+        "laravel/sail": "^1.0.1",
+        "mockery/mockery": "^1.4.4",
+        "nunomaduro/collision": "^5.10",
+        "phpunit/phpunit": "^9.5.10",
+        "barryvdh/laravel-debugbar": "v3.7.0",
+        "filp/whoops": "2.15.3"
+    },
+    "autoload": {
+        "classmap": [
+            "database"
+        ],
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "files": [
+            "app/Helpers/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "php artisan key:generate"
+        ],
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "kylekatarnls/update-helper": true
+        },
+        "platform": {
+            "php": "7.4"
+        }
+    }
+}
